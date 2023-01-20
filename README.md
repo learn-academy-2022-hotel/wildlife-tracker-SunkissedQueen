@@ -4,7 +4,7 @@
 - $ rails new <app_name> -d postgresql -T
 - $ cd <app_name>
 - $ rails db:create
-- $ git remote add origin https://github.com/learn-academy-2022-hotel/wildlife-tracker-SunkissedQueen.git
+- enter terminal command `git remote add origin...` from github repo
 - $ git status
 - $ git checkout -b main
 - $ git add .
