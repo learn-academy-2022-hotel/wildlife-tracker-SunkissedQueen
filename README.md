@@ -74,3 +74,13 @@ $ rails db:migrate
  - http verb, path, click send
  - Output: array of objects containing our data entries
 
+<!-- SHOW -->
+```ruby
+  def show
+    song = Song.find(params[:id])
+    render json: song
+  end
+```
+- Postman
+  - http verb, path, click send
+  - Output: object containing the data entry at the id given
