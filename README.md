@@ -51,3 +51,26 @@ $ rails db:migrate
   > Song.create(title:'Up the Wolves', artist:'The Mountain Goats')
   > Song.create(title:'Til I Met Thee', artist:'Cody Chestnut')
   > Song.create(title:'Everyone Wants to Rule the World', artist:'Tears for Fears')
+
+- push changes to github and deleted the stale branches remotely and locally
+
+- checkout a new branch: resftul-routes
+
+### Process
+- modify the controller method
+- verify that it works in postman
+
+- Postman - data visualization tool, make a request and show a response
+
+<!-- INDEX -->
+- apps/controller
+```ruby
+  def index
+    songs = Song.all
+    render json: songs
+  end
+```
+- Postman
+ - http verb, path, click send
+ - Output: array of objects containing our data entries
+
